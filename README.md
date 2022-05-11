@@ -1,4 +1,4 @@
-# **Apex_Trailhead_Challeges**
+# **Apex_Trailhead_Challenges**
 ##  **Challenge 1:**
 
 
