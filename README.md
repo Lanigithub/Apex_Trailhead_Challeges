@@ -1,6 +1,8 @@
-## **Apex_Trailhead_Challeges**
-### **Challenge 1:**
-### **Challenge 2:  Create an Apex class with a method that returns an array ( or list) of strings**
+# **Apex_Trailhead_Challeges**
+##  **Challenge 1:**
+
+
+##  **Challenge 2:  Create an Apex class with a method that returns an array ( or list) of strings**
 
 #### * Create an Apex class with a method that returns an array ( or list) of formatted **_strings('Test0', 'Test1',..)_** 
 #### * The length of the array is determined by an **_integer parameter_**
@@ -12,7 +14,8 @@
 
 
 
-### **Challenge 3: Create a method for inserting accounts. ( Manipulate Records with DML)**
+
+## **Challenge 3: Create a method for inserting accounts. ( Manipulate Records with DML)**
 
 #### * To pass this challenge, create an **Apex class** that **inserts a new account** named after an incoming **_parameter_**.
 #### If the account is successfully inserted, the method should **return** the account record. If a DML **exception** occurs, the method should **return _null_**.
@@ -22,4 +25,6 @@
 #### * The method must **insert the account** into the system and then **return** the record
 #### * The method must also accept an **empty string**, **catch the failed DML and then return _null_**
 
-### **Challenge 4:** 
+
+
+## **Challenge 4:** 
