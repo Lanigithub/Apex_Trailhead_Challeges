@@ -1,6 +1,6 @@
 ## **Apex_Trailhead_Challeges**
-### ** Challenge 1: **
-### ** Challenge 2: **
+### **Challenge 1:**
+### **Challenge 2:**
 
 
 ### **Challenge 3: Create a method for inserting accounts. ( Manipulate Records with DML)**
