@@ -1,0 +1,26 @@
+// Challenge 2: Create an Apex class with a method that returns an array( or list)  of strings)
+// Create Apex class called tringArrayTest and be in the public scope
+
+public class StringArrayTest {
+    
+ //create a public static method called generateStringArray accepting an Integer paremeter n
+    
+    public static List<String> generateStringArray(Integer n) {
+        
+  //declare a List with type String and name it myList
+        List<String> myList = new List<String>();
+        
+  // iterate through n to get each string value Testn
+        for(Integer i=0;i<n; i++)
+        {
+            myList.add('Test '+i);
+            system.debug(myList[i]);
+        }
+        return myList;
+       
+            
+    }                                      // on The debug anonymous window for execution: 
+                                             // StringArrayTest.generateStringArray(4);
+     
+
+}
