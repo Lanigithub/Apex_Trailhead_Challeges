@@ -1,4 +1,4 @@
-// Challenge 2: Create an Apex class with a method that returns an array( or list)  of strings)
+// Challenge 2: Create an Apex class with a method that returns an array( or list)  of strings
 // Create Apex class called tringArrayTest and be in the public scope
 
 public class StringArrayTest {
@@ -21,6 +21,7 @@ public class StringArrayTest {
             
     }                                      // on The debug anonymous window for execution: 
                                              // StringArrayTest.generateStringArray(4);
+                                              // output: Test0; Test1; Test2; Test3
      
 
 }
