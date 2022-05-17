@@ -50,6 +50,7 @@ The method should finally return a list of Contact records of type List that inc
 #### The method must accept an incoming string as a parameter
 #### The method should then find any contact or lead that matches the string as part of either the first or last name
 #### The method should finally use a return type of List<List< sObject>>
-#### NOTE: Because SOSL indexes data for searching, you must create a Contact record and Lead record before checking this challenge. Both records must have the last #### name Smith. The challenge uses these records for the SOSL search
+#### NOTE: Because SOSL indexes data for searching, you must create a Contact record and Lead record before checking this challenge. Both records must have the 
+#### last name Smith. The challenge uses these records for the SOSL search
 
 ***
