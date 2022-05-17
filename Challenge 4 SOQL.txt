@@ -1,0 +1,16 @@
+// Challenge 4: SOQL
+public class ContactSearch {
+    public static List<Contact> searchForContacts(String name, String postalCode){     // public static method called searchForContacts returns a list of contact with type List<Contct> 
+      
+ 
+  List<Contact> searchlist =[SELECT ID,                         //create a List  to query the ID, name from Contact where LastName matching the first string name
+                                    Name                          // and the MailingPostalCode matching the 2nd string postalCode from the class parameters
+                               FROM Contact 
+                               WHERE LastName =: name AND MailingPostalCode =: postalCode];   //SOQL statements in Apex can reference Apex code variables
+                                                                                           //and expressions if they are preceded by a colon (:). 
+                                                                                           //The use of a local variable within a SOQL statement is called a bind.
+                           
+          return searchlist;                             //Now return the list
+    }
+
+}
