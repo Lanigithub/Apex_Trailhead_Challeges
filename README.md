@@ -1,7 +1,7 @@
 # **Apex_Trailhead_Challenges**
 ##  **Challenge 1:**
 
-
+***
 ##  **Challenge 2:  Create an Apex class with a method that returns an array ( or list) of strings**
 
 #### * Create an Apex class with a method that returns an array ( or list) of formatted **_strings('Test0', 'Test1',..)_** 
@@ -12,7 +12,7 @@
 #### *  The method must accept an incoming Integer as a parameter, which will be used to determine the number of retuening strings
 #### *  The method must return a string value in the format **_Testn _** where n is the index of the current dstring in the array
 
-
+***
 
 
 ## **Challenge 3: Create a method for inserting accounts. ( Manipulate Records with DML)**
@@ -25,9 +25,9 @@
 #### * The method must **insert the account** into the system and then **return** the record
 #### * The method must also accept an **empty string**, **catch the failed DML and then return _null_**
 
+***
 
-
-## **Challenge 4:** 
+## **Challenge 4: SOQL** 
 ```
 Create an Apex class that returns contacts based on incoming parameters.
 For this challenge, you will need to create a class that has a method accepting two strings. 
@@ -40,3 +40,16 @@ The method should then find any contact that has a last name matching the first 
 (API name: MailingPostalCode) matching the second string
 The method should finally return a list of Contact records of type List that includes the ID and Name fields
 ```
+***
+## **Challenge 5: DOSL**
+
+#### Create an Apex class that returns both contacts and leads based on a parameter.
+#### To pass this challenge, create an Apex class that returns both contacts and leads that have first or last name matching the incoming parameter.
+#### The Apex class must be called ContactAndLeadSearch and be in the public scope
+#### The Apex class must have a public static method called searchContactsAndLeads
+#### The method must accept an incoming string as a parameter
+#### The method should then find any contact or lead that matches the string as part of either the first or last name
+#### The method should finally use a return type of List<List< sObject>>
+#### NOTE: Because SOSL indexes data for searching, you must create a Contact record and Lead record before checking this challenge. Both records must have the last #### name Smith. The challenge uses these records for the SOSL search
+
+***
