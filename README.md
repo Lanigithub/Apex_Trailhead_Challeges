@@ -64,7 +64,7 @@ The method should finally return a list of Contact records of type List that inc
 * #### Field Label: Match Billing Address
 * #### Field Name: Match_Billing_Address
      Note: The resulting API Name should be Match_Billing_Address__c.
-* #### Create an Apex trigger:
+ #### Create an Apex trigger:
 * #### Name: AccountAddressTrigger
 * #### Object: Account
 * #### Events: before insert and before update
