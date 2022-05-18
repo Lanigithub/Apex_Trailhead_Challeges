@@ -1,0 +1,33 @@
+public class ContactAndLeadSearch {                                          // Apex class must be called ContactAndLeadSearch and be in the public scope
+    public static  List<List< sObject>> searchContactsAndLeads(String name){        //  String name = ' firstname OR lastname ';
+                                                                       // public static method called searchContactsAndLeads accept an incoming string as a parameter
+                                                                       //  find any contact or lead that matches the string as part of either the first or last name
+      List<List< sObject>> contactsAndLeadsFound =[FIND : name             //  variable name  is assigned the search query( so need to use : before the variable, 
+                                                                          // which consists of two terms (first and last) combined by the OR logical operator
+                                                  IN ALL FIELDS
+                                                  RETURNING Contact(FirstName,LastName), Lead(Company, FirstName,LastName)];   //Using Leads(fields) will give you an error
+        
+                                                                         
+        return contactsAndLeadsFound;                        //    return type of List<List< sObject>>
+    }
+
+}
+
+
+
+// NOTE: Because SOSL indexes data for searching, 
+// you must create a Contact record and Lead record before checking this challenge.
+//  Both records must have the last name Smith. The challenge uses these records for the SOSL search:
+//  On the debug Anonymous window:
+//  
+//  // Create a new contact with LastName='Smith'
+//Contact smith= new Contact( FirstName='John',
+//                           LastName= 'Smith');
+//insert smith;
+
+//Create a new lead with LastName= 'Smith'
+
+//Lead smith1 =new Lead(Company= 'Sunso',
+ //                      FirstName='Summer',
+//                      LastName='Smith');
+//insert smith1;
