@@ -1,0 +1,28 @@
+// Trigger Challeng:
+
+trigger AccountAddressTrigger on Account (before insert, before update) {               // create a trigger on Account for the events before insert. before update
+    
+    for (Account a: Trigger.New) {                                  // use for loop to loop through all the accounts for each account a in the Trigger.New (new version of the accounts after the Trigger fires ) )
+        
+        if (a.Match_Billing_Address__c == true) {              // use if for the condition: Match Billing Address is true ( use dot notation)
+            
+            a.ShippingPostalCode = a.BillingPostalCode;
+            a.ShippingStreet =  a.BillingStreet;
+            a.ShippingCity  = a.BillingCity;
+            a.ShippingCountry =a.BillingCountry; 
+            
+        }
+    }
+
+}
+
+// Trigger.New : Returns a list of the new versions of the sObject records.
+// This sObject list is only available in insert, update, and undelete triggers, and the records can only be modified in before triggers.
+// Pre-Work: ( go to setup for field management choose field and relationship check "Checkbox")
+//Add a checkbox field to the Account object:
+
+//Field Label: Match Billing Address
+//Field Name: Match_Billing_Address
+//Note: The resulting API Name should be Match_Billing_Address__c.
+// Go to any account to add address to the Billing and then the shipping address will be recorded as well
+//  So let's record the ShippingAddress and BillingAdress as well and then update any field
