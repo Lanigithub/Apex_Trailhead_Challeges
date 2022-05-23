@@ -69,6 +69,6 @@ The method should finally return a list of Contact records of type List that inc
 * #### Object: Account
 * #### Events: before insert and before update
 * #### Condition: Match Billing Address is true
-* #### Operation: set the Shipping Postal Code to match the Billing Postal Code
+* #### Operation: set the Shipping Postal Code to match the Billing Postal Code 
 
 ***
