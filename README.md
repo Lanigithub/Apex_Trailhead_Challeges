@@ -100,6 +100,7 @@ The method should finally return a list of Contact records of type List that inc
 
 *** 
 ## Challenge 9: Set up Org unit with postman:
+https://trailhead.salesforce.com/content/learn/projects/quick-start-connect-postman-to-salesforce/set-up-your-org
 ```
 Get Your Trailhead Playground Username and Password
 Let’s get started by opening your Trailhead Playground. Scroll to the bottom of this page and click Launch. If you see a tab in your org labeled Get Your Login Credentials, great! Skip ahead to step 1. Otherwise, from the App Launcher (), find and open Playground Starter and follow the steps.
@@ -122,3 +123,14 @@ Select CORS again.
 Click New and enter https://*.postman.co (note the .co domain extension) as the Origin URL Pattern.
 Click Save.
 ```
+***
+## Challenge 10: Set Up and Connect Postman
+Sign Up for Postman and Create a Workspace
+https://trailhead.salesforce.com/content/learn/projects/quick-start-connect-postman-to-salesforce/set-up-and-connect-postman
+
+***
+## Challenge 11: Use REST API
+https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_rest?trailmix_creator_id=lanfu2&trailmix_slug=lanis-trailmix
+
+
+***
