@@ -97,3 +97,28 @@ The method should finally return a list of Contact records of type List that inc
     * #### Name: TestVerifyDate
     * #### Goal: 100% code coverage
     * #### Run your test class at least once
+
+*** 
+## Challenge 9: Set up Org unit with postman:
+```
+Get Your Trailhead Playground Username and Password
+Let’s get started by opening your Trailhead Playground. Scroll to the bottom of this page and click Launch. If you see a tab in your org labeled Get Your Login Credentials, great! Skip ahead to step 1. Otherwise, from the App Launcher (), find and open Playground Starter and follow the steps.
+
+Click the Get Your Login Credentials tab and take note of your username.
+Click Reset My Password.
+This sends an email to the address associated with your username.
+Click the link in the email.
+Enter a new password, confirm it, and click Change Password.
+Save your username and password for use later in this project.
+
+Set Up Cross-Origin Resource Sharing in Salesforce
+Cross-Origin Resource Sharing (CORS) allows code running in a web browser to communicate with Salesforce from a specific origin. Let’s add the URL patterns for Postman.
+
+In your Trailhead Playground, from Setup, enter cors in the Quick Find box and select CORS.
+In the Allowed Origins List, click New.
+Enter https://*.postman.com as the Origin URL Pattern.
+Click Save.
+Select CORS again.
+Click New and enter https://*.postman.co (note the .co domain extension) as the Origin URL Pattern.
+Click Save.
+```
