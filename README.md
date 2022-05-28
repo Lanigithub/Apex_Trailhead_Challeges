@@ -99,7 +99,19 @@ The method should finally return a list of Contact records of type List that inc
     * #### Run your test class at least once
 
 *** 
-## Challenge 9: Set up Org unit with postman:
+## Challenge 9: Create a Unit Test for a Simple Apex Trigger
+
+#### Create and install a simple Apex trigger which blocks inserts and updates to any contact with a last name of 'INVALIDNAME'. You'll copy the code for the class from GitHub. Then write unit tests that achieve 100% code coverage.
+#### Create an Apex trigger on the Contact object
+ * ####  Name: RestrictContactByName
+ * #### Code: Copy from GitHub
+ *  #### Place the unit tests in a separate test class
+* #### Name: TestRestrictContactByName
+* #### Goal: 100% test coverage
+* #### Run your test class at least once
+
+*** 
+## Challenge 11: Set up Org unit with postman:
 https://trailhead.salesforce.com/content/learn/projects/quick-start-connect-postman-to-salesforce/set-up-your-org
 ```
 Get Your Trailhead Playground Username and Password
@@ -124,12 +136,12 @@ Click New and enter https://*.postman.co (note the .co domain extension) as the 
 Click Save.
 ```
 ***
-## Challenge 10: Set Up and Connect Postman
+## Challenge 12: Set Up and Connect Postman
 Sign Up for Postman and Create a Workspace
 https://trailhead.salesforce.com/content/learn/projects/quick-start-connect-postman-to-salesforce/set-up-and-connect-postman
 
 ***
-## Challenge 11: Use REST API
+## Challenge 13: Use REST API
 https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_rest?trailmix_creator_id=lanfu2&trailmix_slug=lanis-trailmix
 
 
