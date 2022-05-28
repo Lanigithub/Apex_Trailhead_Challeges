@@ -1,0 +1,23 @@
+@isTest
+public class TestVerifyDate {
+
+    //test method to check if date2 is within the next 30 days of date1 returning date2
+        
+     @isTest static void testDateWithin30Days() {
+        Date datechecked =  VerifyDate.CheckDates(date.valueof('2022-05-27'),date.valueof('2022-06-20'));
+        System.assertEquals(date.valueof('2022-06-20'), datechecked);
+    }
+    
+    //test method to check if date2 is more than  30 days of date1 returning the end of the date of the month
+    
+    @isTest static void test30DaysAway() {
+        Date datechecked =  VerifyDate.CheckDates(date.valueof('2022-05-27'),date.valueof('2022-06-29'));
+        System.assertEquals(date.valueof('2022-05-31'), datechecked);
+    }
+    
+     //test method to check if date2 is in the past of date1 returning the end oh the date of the month
+    @isTest static void testDateInThePast() {
+        Date datechecked =  VerifyDate.CheckDates(date.valueof('2022-05-27'),date.valueof('2022-05-20'));
+        System.assertEquals(date.valueof('2022-05-31'),datechecked);
+    }
+}
