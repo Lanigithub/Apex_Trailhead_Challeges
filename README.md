@@ -146,3 +146,14 @@ https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_res
 
 
 ***
+## Challenge 14 Create a Formula Field
+https://trailhead.salesforce.com/en/content/learn/modules/point_click_business_logic/formula_fields?trail_id=force_com_dev_beginner&trailmix_creator_id=lanfu2&trailmix_slug=lanis-trailmix
+
+#### Create a formula field that calculates the number of days remaining before a contract expires.
+*#### Create a custom field:
+*#### Object: Contract
+*#### Data Type: Formula
+*#### Field Label: Days Remaining
+*#### Field Name: Days_Remaining
+*#### Formula Return Type: Number
+*#### Formula: Calculate the number of days between the contract end date and today
