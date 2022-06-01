@@ -1,0 +1,29 @@
+//Challenge 13
+//Create a Formula Field
+//Create a formula field that calculates the number of days remaining before a contract expires.
+//Create a custom field:
+//Object: Contract
+//Data Type: Formula
+//Field Label: Days Remaining
+//Field Name: Days_Remaining
+//Formula Return Type: Number
+//Formula: Calculate the number of days between the contract end date and today
+
+Step 1:
+Create a new contract on  App->Contracts->new: Account name: Postman, Status: Draft, Contract Start Date: 5/31/22. COntract end Date: 8/30/22
+Contract term: 3 months. 
+
+Step 2: 
+Setup->Object Manager->Contract->Fields and Relationships->new->click on formula->
+Field Label: Days Remaining
+//Field Name: Days_Remaining
+//Formula Return Type: Number
+And then follow the above instruction to create a formula field:
+Insert:
+End Date-today()
+check syntax and then next....
+
+Step 3: Verify and make report
+
+App=>reports->new report->Contracts-> continue->Days remaining( on Add column): 91 days
+
