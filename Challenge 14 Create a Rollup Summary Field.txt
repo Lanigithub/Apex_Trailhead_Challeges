@@ -1,0 +1,20 @@
+//Create a Rollup Summary Field
+//Add a custom field to the standard account object to provide a rollup summary of the total expected revenue from all related opportunities.
+
+Important: If you have Advanced Currency Management enabled in your Trailhead Playground, disable it for this Hands-On Challenge.
+//Create a roll-up summary field on the Account object:
+//Field Label: Potential Value
+//Field Name: Potential_Value
+//Calculate the total expected revenue of all the opportunities related to the account
+
+
+Step 1: 
+Setup->Object Management->Account->Fields and Relationship-> New_>
+//Field Label: Potential Value
+//Field Name: Potential_Value
+->Next->Summarized Object: Opportunities; Roll-Up type: Sum; Field to Aggregate: Expected Revenue->Next Next Save
+
+Step 2: Check:
+App-> Accounts-> Grand Hotels & Resorts Ltd( 5 opportunities)-> details-> potential  Value: 
+$784,000.00
+
