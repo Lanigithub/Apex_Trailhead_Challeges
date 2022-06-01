@@ -158,4 +158,15 @@ https://trailhead.salesforce.com/en/content/learn/modules/point_click_business_l
 * #### Formula Return Type: Number
 * #### Formula: Calculate the number of days between the contract end date and today
 
-*** 
+***
+## Challenge 14 Create a Rollup Summary Field
+
+#### Add a custom field to the standard account object to provide a rollup summary of the total expected revenue from all related opportunities.
+
+#### Important: If you have Advanced Currency Management enabled in your Trailhead Playground, disable it for this Hands-On Challenge.
+* #### Create a roll-up summary field on the Account object:
+* #### Field Label: Potential Value
+* #### Field Name: Potential_Value
+* #### Calculate the total expected revenue of all the opportunities related to the accountCreate a Rollup Summary Field
+* #### Add a custom field to the standard account object to provide a rollup summary of the total expected revenue from all related opportunities.
+
