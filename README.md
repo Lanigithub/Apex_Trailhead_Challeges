@@ -161,6 +161,8 @@ https://trailhead.salesforce.com/en/content/learn/modules/point_click_business_l
 ***
 ## Challenge 14 Create a Rollup Summary Field
 
+https://trailhead.salesforce.com/en/content/learn/modules/point_click_business_logic/roll_up_summary_fields?trail_id=force_com_dev_beginner&trailmix_creator_id=lanfu2&trailmix_slug=lanis-trailmix
+
 #### Add a custom field to the standard account object to provide a rollup summary of the total expected revenue from all related opportunities.
 
 #### Important: If you have Advanced Currency Management enabled in your Trailhead Playground, disable it for this Hands-On Challenge.
