@@ -172,7 +172,7 @@ https://trailhead.salesforce.com/en/content/learn/modules/point_click_business_l
 * #### Calculate the total expected revenue of all the opportunities related to the accountCreate a Rollup Summary Field
 * #### Add a custom field to the standard account object to provide a rollup summary of the total expected revenue from all related opportunities.
 ***
-## Create a Validation Rule
+## Challenge 15 Create a Validation Rule
 https://trailhead.salesforce.com/content/learn/modules/point_click_business_logic/validation_rules?trail_id=force_com_dev_beginner&trailmix_creator_id=lanfu2&trailmix_slug=lanis-trailmix
 #### Create a validation rule that displays an error message and prevents a user from creating or updating a contact if two conditions are both true.
 ##### Create a validation rule:
