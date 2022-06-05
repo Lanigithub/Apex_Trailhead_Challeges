@@ -159,7 +159,7 @@ https://trailhead.salesforce.com/en/content/learn/modules/point_click_business_l
 * #### Formula: Calculate the number of days between the contract end date and today
 
 ***
-## Challenge 14 Create a Rollup Summary Field
+## Challenge 15 Create a Rollup Summary Field
 
 https://trailhead.salesforce.com/en/content/learn/modules/point_click_business_logic/roll_up_summary_fields?trail_id=force_com_dev_beginner&trailmix_creator_id=lanfu2&trailmix_slug=lanis-trailmix
 
@@ -172,9 +172,14 @@ https://trailhead.salesforce.com/en/content/learn/modules/point_click_business_l
 * #### Calculate the total expected revenue of all the opportunities related to the accountCreate a Rollup Summary Field
 * #### Add a custom field to the standard account object to provide a rollup summary of the total expected revenue from all related opportunities.
 ***
-## Challenge 15 Create a Validation Rule
+
+## Challenge 16 Create a Validation Rule
 https://trailhead.salesforce.com/content/learn/modules/point_click_business_logic/validation_rules?trail_id=force_com_dev_beginner&trailmix_creator_id=lanfu2&trailmix_slug=lanis-trailmix
 #### Create a validation rule that displays an error message and prevents a user from creating or updating a contact if two conditions are both true.
+#### A validation rule can contain a formula or expression that evaluates the data in one or more fields and returns a value of “True” or “False.”
+####  Validation rules can also include error messages to display to users when they enter invalid values based on specified criteria. Using these rules effectively contributes to quality data
+
+Project: 
 ##### Create a validation rule:
 * #### Rule Name: Contact_must_be_in_Account_ZIP_Code
 * #### Operator: AND (return true if both conditions are true)
@@ -184,4 +189,6 @@ https://trailhead.salesforce.com/content/learn/modules/point_click_business_logi
 * #### The contact mailing zip code is different than the account shipping zip code
 * #### Hint: Use the API names (MailingPostalCode and ShippingPostalCode) and the <> (Not Equal) operator.
 * #### Enter an error message for the validation rule
+
+
 
