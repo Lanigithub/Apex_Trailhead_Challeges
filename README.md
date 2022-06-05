@@ -144,7 +144,10 @@ https://trailhead.salesforce.com/content/learn/projects/quick-start-connect-post
 ## Challenge 13: Use REST API
 https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_rest?trailmix_creator_id=lanfu2&trailmix_slug=lanis-trailmix
 
-
+#### Create a New Account Record with REST API
+* ####  Create a new record in your accounts using REST API:
+* ####  Name: Blackbeards Coconut Milk Emporium
+* ####  Description: The finest coconut milk in the seven seas.
 ***
 ## Challenge 14 Create a Formula Field
 https://trailhead.salesforce.com/en/content/learn/modules/point_click_business_logic/formula_fields?trail_id=force_com_dev_beginner&trailmix_creator_id=lanfu2&trailmix_slug=lanis-trailmix
