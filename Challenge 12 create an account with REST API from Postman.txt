@@ -1,0 +1,18 @@
+// post SObject Create : https://trailhead.salesforce.com/en/content/learn/modules/api_basics/api_basics_rest
+
+//Create a New Account Record with REST API
+//Create a new record in your accounts using REST API:
+//Name: Blackbeards Coconut Milk Emporium
+//Description: The finest coconut milk in the seven seas.
+
+go to postman->Mycollection->Salesforcecollection->Salesforce platform APIs->MySalesforceAPIFork-> 
+REST->SObject->post SObject Create->Params _>Value: Account -> Body:
+{
+" Name": "Blackbeards Coconut Milk Emporium"
+"Description": "The finest coconut milk in the seven seas."
+}
+
+Click on Beautify and Save and Send
+
+Site note: I got a few error messages because of the validation rules I have set so I need to delete them 
+and delete one trigger to get the right  decription 
