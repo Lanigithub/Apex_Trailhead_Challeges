@@ -252,5 +252,15 @@ https://trailhead.salesforce.com/content/learn/modules/data_modeling/object_rela
 #### Data Type: Lookup
 #### Field Label: Contact
 #### Field Name: Contact
+
+#### Project 3: Use Schema Builder to create a custom field for the Property object
+https://trailhead.salesforce.com/content/learn/modules/data_modeling/schema_builder?trailmix_creator_id=lanfu2&trailmix_slug=lanis-trailmix
+
+#### DreamHouse brokers often visit properties with their clients. They want to see on the property record where the property is located.
+##### Use Schema Builder to add a street address field to the Property object.
+* #### Data Type: Text Area
+* #### Field Label: Street Address
+* #### Field Name: Street_Address
+* #### Always require a value in this field in order to save a record: Selected
 *** 
 
