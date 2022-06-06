@@ -1,0 +1,56 @@
+//Import Accounts Using Bulk API and Postman
+//Import account records using Bulk API and Postman.
+// CSV File: bulkv2hocdata
+
+1/. Set Up Your Playground and Postman
+To explore Bulk API, you’ll use Postman to create some account records.
+
+Log in to your Trailhead Playground.
+Log in to the Postman web app.
+Connect your Playground to Postman by getting a new token.
+Test that your connection is working with the REST GET Limits resource.
+
+2/. Create a Bulk Job
+The first step is to create a job in your fork of the Salesforce API Collection. A job specifies the type of operation and data object you’re working with. It functions as a bucket into which you add data for processing.
+
+In Collections, open the Bulk v2 folder.
+Click POST Create job.
+
+Let’s create the request body.
+
+Copy and paste the following text into the Body field in Postman.
+Note: The lineEnding differs based on the OS you are using. For Windows, use CRLF. For Unix systems, including macOS, use LF.
+{
+"operation" : "insert",
+"object" : "Account",
+"contentType" : "CSV",
+"lineEnding" : "CRLF"
+}
+     
+     2. Click Save.
+3. Click Send and check out the response.
+
+3/. Add Data to the Job
+
+Click the Body tab and select Raw from the dropdown.
+Copy the following text into a text editor to clear any extra formatting, then copy it from the text file into the request body field.
+
+Or***** You can upload a CSV file by selecting the binary radio button and uploading your .csv file, or you can paste in a list.
+
+4/ Close the Job
+Now that you’ve submitted your data, you need to let Salesforce know that it’s time to process the data. 
+
+In your Salesforce API fork, Bulk v2, Query folder click PATCH Close or Abort a Job.
+Click the Body tab and notice that "state": is already populated with “UploadComplete”.
+
+5/ Check the Status of the Job
+You’ve submitted your data and you’ve let Salesforce know you’re done uploading data. Now it’s up to the server to process the request. You can monitor the server’s progress by checking the status of the job through the Salesforce UI, or through the API. Let’s take a look at each method.
+
+Here’s how to check the status of the job in your Trailhead playground. 
+
+From Setup, enter Bulk Data Load Jobs in the Quick Find box
+Select Bulk Data Load Jobs.
+You can check the status of a job on this page. Or, you can click a job ID to check the status and get detailed results for that job.
+
+**** It takes a while to process this job in salesforce  with status "open"
+
