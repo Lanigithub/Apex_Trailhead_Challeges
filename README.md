@@ -111,7 +111,7 @@ The method should finally return a list of Contact records of type List that inc
 * #### Run your test class at least once
 
 *** 
-## Challenge 11: Set up Org unit with postman:
+## Challenge 11A : Set up Org unit with postman:
 https://trailhead.salesforce.com/content/learn/projects/quick-start-connect-postman-to-salesforce/set-up-your-org
 ```
 Get Your Trailhead Playground Username and Password
@@ -136,12 +136,12 @@ Click New and enter https://*.postman.co (note the .co domain extension) as the 
 Click Save.
 ```
 ***
-## Challenge 12: Set Up and Connect Postman
+## Challenge 11 B: Set Up and Connect Postman
 Sign Up for Postman and Create a Workspace
 https://trailhead.salesforce.com/content/learn/projects/quick-start-connect-postman-to-salesforce/set-up-and-connect-postman
 
 ***
-## Challenge 13: Use REST API
+## Challenge 12: Use REST API
 https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_rest?trailmix_creator_id=lanfu2&trailmix_slug=lanis-trailmix
 
 #### A REST resource is an abstraction of a piece of information or an action, such as a single data record, a collection of records, or a  query. Each resource in REST API is identified by a named Uniform Resource Identifier (URI) and is accessed using standard HTTP methods (HEAD, GET, POST, PATCH, DELETE). REST API is based on the usage of resources, their URIs, and the links between them.
@@ -158,6 +158,12 @@ A REST request consists of four components: a resource URI, an HTTP method, requ
 * ####  Create a new record in your accounts using REST API:
 * ####  Name: Blackbeards Coconut Milk Emporium
 * ####  Description: The finest coconut milk in the seven seas.
+***
+## Challenge 13 Import Accounts Using Bulk API and Postman
+ https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_bulk?trailmix_creator_id=lanfu2&trailmix_slug=lanis-trailmix
+Import account records using Bulk API and Postman.
+CSV File: bulkv2hocdata
+
 ***
 ## Challenge 14 Create a Formula Field
 https://trailhead.salesforce.com/en/content/learn/modules/point_click_business_logic/formula_fields?trail_id=force_com_dev_beginner&trailmix_creator_id=lanfu2&trailmix_slug=lanis-trailmix
