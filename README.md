@@ -219,23 +219,23 @@ Describe the perks of using objects on the Salesforce platform.
 Explain the difference between standard objects and custom objects.
 List the types of custom fields an object can have.
 ```
-```
 #### Build a custom Offer object:
 When a homebuyer makes an offer to buy a property, the brokers at DreamHouse Realty need to track the details in Salesforce. Create a custom object they can use to record the offer amount and target close date for the sale. Use auto numbering to generate the name of each offer record.
-Create a custom object
-Label: Offer
-Object Name: Offer
-Record Name: Offer Name
-Data Type: Auto Number
-Display Format: OF-{0000}
-Starting Number: 1
-Create a custom currency field on the Offer object
-Data Type: Currency
-Field Label: Offer Amount
-Field Name: Offer_Amount
+#### Create a custom object
+* #### Label: Offer
+* #### Object Name: Offer
+* #### Record Name: Offer Name
+* #### Data Type: Auto Number
+* #### Display Format: OF-{0000}
+* #### Starting Number: 1
+* #### Create a custom currency field on the Offer object
+* #### Data Type: Currency
+* #### Field Label: Offer Amount
+* #### Field Name: Offer_Amount
 Create a custom date field on the Offer object
-Data Type: Date
-Field Label: Target Close Date
-Field Name: Target_Close_Date
-```
+* #### Data Type: Date
+ * #### Field Label: Target Close Date
+* #### Field Name: Target_Close_Date
+
+*** 
 
