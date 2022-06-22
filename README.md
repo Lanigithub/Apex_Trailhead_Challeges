@@ -268,6 +268,8 @@ https://trailhead.salesforce.com/content/learn/modules/data_modeling/schema_buil
 #### Project 1: Import Data
 (https://trailhead.salesforce.com/en/content/learn/modules/lex_implementation_data_management/lex_implementation_data_import?trail_id=force_com_dev_beginner&trailmix_creator_id=lanfu2&trailmix_slug=lanis-trailmix)
 
+#### Two methods to import data from outside of salesforce: Data Import Wizard and Data Loader
+
 #### Import data using the Data Import Wizard.
 #### Download a CSV file that contains contact data, and import it using the Data Import Wizard.
 Download this CSV file by right-clicking and selecting "Save Link As". Make sure you save it as a CSV (.csv) file, and not a text (.txt) file. You don't need to use Excel.
@@ -284,4 +286,28 @@ Download this CSV file by right-clicking and selecting "Save Link As". Make sure
    * #### FNAME to Contact: First Name
    * #### LNAME to Contact: Last Name
    * #### CELL to Contact: Mobile
+
+
+### Project 2: Export Data:
+https://trailhead.salesforce.com/content/learn/modules/lex_implementation_data_management/lex_implementation_data_export?trail_id=force_com_dev_beginner&trailmix_creator_id=lanfu2&trailmix_slug=lanis-trailmix
+
+#### Two methods of exporting data from salesforce: 
+ * ##### Data Export Service—an in-browser service, accessible through the Setup menu. It allows you to export data manually once every 7 days (for weekly export) or 29 days (for monthly export). You can also export data automatically at weekly or monthly intervals. Weekly exports are available in Enterprise, Performance, and Unlimited Editions. In Professional Edition and Developer Edition, you can generate backup files only every 29 days, or automatically at monthly intervals only.
+ * ##### Data Loader—a client application that you must install separately. It can be operated either through the user interface or the command line. The latter option is useful if you want to automate the export process, or use APIs to integrate with another system.
+#### Follow these steps to export data using the Data Export Service.
+```
+1. From Setup, enter Data Export in the Quick Find box, then select Data Export and Export Now or Schedule Export.
+  * The Export Now option prepares your files for export immediately. This option is only available if enough time has passed since your last export.
+  * The Schedule Export option allows you to schedule the export process for weekly or monthly intervals.
+2. Select the desired encoding for your export file.
+3. If you want images, documents, attachments, and so on included in your data, select the appropriate options.
+4. Select Replace carriage returns with spaces to have spaces instead of carriage returns or line breaks in your export files. This is useful if you plan to use your export files for importing or other integrations.
+5. If you're scheduling your export, select the frequency (only available for organizations with monthly exports), start and end dates, and time of day for your scheduled export.
+6. Under Exported Data, select the types of data to include in your export. We recommend that you select Include all data if you’re not familiar with the terminology used for some of the types of data.
+7. Click Start Export or Save. Salesforce creates a zip archive of CSV files and emails you when it's ready. Exports will complete as soon as possible, however we can't guarantee the date and time the export will complete. Large exports are broken up into multiple files. Follow the link in the email or click Data Export to download the zip file. Zip files are deleted 48 hours after the email is sent.
+```
+
+
+
+
 
