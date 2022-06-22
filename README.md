@@ -331,7 +331,35 @@ https://trailhead.salesforce.com/content/learn/modules/lex_implementation_data_m
 https://trailhead.salesforce.com/content/learn/modules/data_security?trail_id=force_com_dev_beginner
 
 ### Overview of Data Security:
+#### "The platform makes it easy to specify which users can view, create, edit, or delete any record or field in the app. You can control access to your whole org, a specific object, a specific field, or even an individual record. By combining security controls at different levels, you can provide just the right level of data access to thousands of users without having to specify permissions for each user individually."
+####   You can manage record-level access in these four ways:
+```
+Records
+**You can allow particular users to view an object, but then restrict the individual object records they're allowed to see. For example, an interviewer can see and edit her own reviews, but not the reviews of other interviewers. You can manage record-level access in these four ways.
+
+1. Organization-wide defaults specify the default level of access users have to each others’ records. You use org-wide sharing settings to lock down your data to the most restrictive level, and then use the other record-level security and sharing tools to selectively give access to other users.
+
+2. Role hierarchies give access for users higher in the hierarchy to all records owned by users below them in the hierarchy. Role hierarchies don’t have to match your organization chart exactly. Instead, each role in the hierarchy should represent a level of data access that a user or group of users needs.
+
+3.Sharing rules are automatic exceptions to organization-wide defaults for particular groups of users, so they can get to records they don’t own or can’t normally see. Sharing rules, like role hierarchies, are only used to give additional users access to records. They can’t be stricter than your organization-wide default settings.
+
+4. Manual sharing allows owners of particular records to share them with other users. Although manual sharing isn’t automated like org-wide sharing settings, role hierarchies, or sharing rules, it can be useful in some situations, such as when a recruiter going on vacation needs to temporarily assign ownership of a job application to someone else
+```
 ### Control Access to the Org:
+ * #### Create, view, and manage users.
+ * #### Set password policies.
+ * #### Limit the IP addresses from which users can log in.
+ * #### Limit the times at which users can log in.
+### Project: Create a guest administrator user and deactivate it
+ * #### Your hands-on org comes with a System Administrator user. Create a new user using the System Administrator profile, then deactivate that user to preserve the licenses in your org.
+ * #### Challenge Requirements
+   * #### Create a new user:
+    * ##### Profile: System Administrator
+    * ######  User License: Salesforce
+    * ###### Username: must contain guestadmin somewhere in it
+* ##### Alias: guestadm
+  * ######  The new user must be inactive
+
 ### Control Access to the Objects:
 ### Control Access to the Fields:
 ### Control Access to Records:
