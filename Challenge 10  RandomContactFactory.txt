@@ -1,0 +1,23 @@
+public class RandomContactFactory {
+    
+    public static List<Contact> generateRandomContacts(Integer numCons, String lastName) {
+        List<Contact> cons= new List<contact>();  // Instanciate a list of contacts
+        //Use for loop to generate(create) a list of contacts:
+        for ( Integer i=0; i<numCons; i++){
+            Contact con= new Contact(FirstName='Test' + i,
+                                     LastName= lastName);
+            cons.add(con);   // add each con to the contact list cons
+        }
+              
+		return cons;       
+    }
+    
+}
+
+
+
+
+//Create a Contact Test Factory
+//Create an Apex class that returns a list of contacts based on two incoming parameters: 
+//the number of contacts to generate and the last name. 
+//Do not insert the generated contact records into the database.
