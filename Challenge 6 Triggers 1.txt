@@ -1,4 +1,4 @@
-// Trigger Challeng:
+// Trigger Challenge:
 
 trigger AccountAddressTrigger on Account (before insert, before update) {               // create a trigger on Account for the events before insert. before update
     
