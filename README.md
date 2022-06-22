@@ -272,16 +272,16 @@ https://trailhead.salesforce.com/content/learn/modules/data_modeling/schema_buil
 #### Download a CSV file that contains contact data, and import it using the Data Import Wizard.
 Download this CSV file by right-clicking and selecting "Save Link As". Make sure you save it as a CSV (.csv) file, and not a text (.txt) file. You don't need to use Excel.
 ### Use the Data Import Wizard to import the file:
-  *#### Kind of data: Accounts and Contacts
-  *#### Type of import: Add new records
-  *#### Match Contact by: Name
-*#### Where is your data located?: CSV
-  *####  File: Choose File
-  *####  Character Code: ISO-8859-1 (the default)
-  *#### Character Code: ISO-8859-1 (the default)
-   *#### Values Separated by: Comma
-*#### Map all fields:
-   *#### FNAME to Contact: First Name
-   *#### LNAME to Contact: Last Name
-   *#### CELL to Contact: Mobile
+  * #### Kind of data: Accounts and Contacts
+  * #### Type of import: Add new records
+  * #### Match Contact by: Name
+* #### Where is your data located?: CSV
+  * ####  File: Choose File
+  * ####  Character Code: ISO-8859-1 (the default)
+  * #### Character Code: ISO-8859-1 (the default)
+   * #### Values Separated by: Comma
+* #### Map all fields:
+   * #### FNAME to Contact: First Name
+   * #### LNAME to Contact: Last Name
+   * #### CELL to Contact: Mobile
 
