@@ -1,0 +1,44 @@
+2. Control Access to Objects: 
+You can set object permissions with profiles or permission sets. Each user is assigned one profile. 
+Users can be assigned one or more permission sets.
+
+Managing Profiles:
+Setup-> Profiles->select Profiles to view
+
+Create a Profile
+The easiest way to create a profile is to clone an existing profile that’s similar to the one you want to create, and then modify it.
+Salesforce has an enhanced profile user interface that makes it easy to find and modify profile settings. That’s what we’ll use for this exercise.
+
+-> From Setup, in the Quick Find box, enter User Management Settings, and then select User Management Settings. Enable Enhanced Profile User Interface.
+Create:
+->From Setup, in the Quick Find box, enter Profiles, and then select Profiles.
+->Click Clone next to a profile similar to the one you want to create.
+->Give your new profile a name, and save.
+
+Go to App  => pick Object Settings->pick objects( accounts, contacts, leads...) to Edit and check the box of " Edit, read.."
+->save
+
+3. Control Access to fields:
+Setup->Profiles-> clone Standard User->enter profile name: Sales -> Click on Objects Settings->Click on Accounts=>Edit
+Object permission  for Accounts: Read, Create, Edit -> Field Persmissions: Rating: No access ( uncheck rating access)->save
+back to Object Settings-> Click on Contacts->Edit-> Choose Read Create Edit for Object Permissions->save
+
+Add Field Access with a Permission Set
+Setup-> Permission Sets->New -> Label: Rating; API Name: Rating; Liscense: Salesforce Or None->Save
+->Back to Permission sets ->Choose Rating-> Object Settings-> Accounts-> Control Field Permissions: Rating for Read and Edit->save
+
+4. Control Access to Records:
+https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_records
+
+Create a custome Object:
+Setup->Object Manager-> Upper right choose Create Custom Object-> Label: Project; Label: Project
+Plural Label: Projects
+Object Name: Project
+Record Name: Project Name
+Record Name Data Type: Text
+
+Configure organization-wide default sharing settings:
+ for the Project object so that Project 
+records are visible only to the record owner and to users above them in the role hierarchy.
+
+Setup->Sharing Settings->Edit-> Find the Object Project and deselect the checkbox for Role Hierarchy and change all to private

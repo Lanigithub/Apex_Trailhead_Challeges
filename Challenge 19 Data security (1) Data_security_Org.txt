@@ -1,0 +1,49 @@
+1. Control Access to the Org: https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_org
+//* Create, view, and manage users.
+
+Create User:You can create users—even multiple users—in just a few clicks. It’s as simple as entering a username, alias, and email, and selecting a role, license, and profile. 
+Many more options are available, of course, but that’s all you need to get started:
+
+Setup->type in Users in search and then choose User->New User->or Add Multiple Users->
+->Enter the user’s name, email address, and a unique username in the form of an email address. By default, the username is the same as the email address.
+->Select the user license this user will have. The license determines which profiles are available for each user.
+->Select a profile, which specifies the user’s minimum permissions and access settings.
+->Select the option to generate a new password and notify the user, then save.
+
+Deactivate a User:
+You can't delete a user, but you can deactivate an account so a user can’t log in. Deactivated users lose access to all records.
+SetUp->User->Edit->Clear Activatecheckbox->save.
+If you cant deactivate the account: Freeze the account: setup->User->freeze->save
+ You could click Active or unfreeze the account if it is needed
+
+Set Password Policy:
+SetUp->search and click on Password Policies,->
+Customize the password settings:
+->How long should passwords be? Longer is usually better, within reason.
+->How complex do you want your passwords? You can require alphabetical, numeric, uppercase, lowercase, or special characters.
+->How many days is a password valid?
+->How many times can someone try to log in with invalid credentials before being locked out?
+->Choose what to do about forgotten passwords and locked accounts.
+Click Save.
+
+Specify Trusted IP Ranges for the Org:
+
+Setup->Network Access->New->enter start and end point of the range of trusted IP addresses, and click Save.
+How to choose IP range: https://www.youtube.com/watch?v=LIzTo6e4FgY
+If you have an address outside this range, you aren't excluded from logging in. You simply have to verify your identity by entering a verification code.
+
+Restrict Login Access by IP Address Using Profiles:
+You can restrict where users can log in from using profiles. For example, suppose that certain users shouldn’t be able to log in if they’re using an IP address outside of the office.
+Setup-> Profiles->click a profile name=>Click Login IP Ranges->New->edit and save
+
+Restrict Login Access by Time:
+->From Setup, in the Quick Find box, enter Profiles, and then select Profiles.
+->Click the profile you want to change.
+->Under Login Hours, click Edit.
+->Set the days and hours when users with this profile can log in to the organization.
+->To allow users to log in at any time, click Clear all times.
+->To prohibit users from using the system on a specific day, set the start and end times to the same value. 
+
+
+
+
