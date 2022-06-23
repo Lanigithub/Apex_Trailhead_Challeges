@@ -379,6 +379,32 @@ Object Permissions: Leads (Read, Edit)
 Make sure Edit and Create object permissions aren't enabled for any other objects in the Cleaner profile.
 ```
 ### Control Access to the Fields:
+### Project: 
+#### Create a profile and permission set to handle field access
+Sales team members have most of the same object and field permissions as the Standard User profile. But your company wants to make sure that sales team members don’t delete certain records, and that only senior sales members have access to certain fields.
+
+For this challenge, use both profiles and permission sets to control object-level permissions. Make sure that all sales team members can create, edit, and view accounts and contacts, but NOT delete them. Then make sure that most sales members can't see or edit the Rating field on accounts, but some senior sales members can.
+```
+Challenge Requirements
+Clone the Standard User profile:
+Existing Profile: Standard User
+Profile Name: Sales
+Control access for the Sales profile:
+Standard Object Permissions:
+Accounts: Read, Create, Edit
+Contacts: Read, Create, Edit
+Field Permissions:
+Rating field on the Account object: no access
+All other permissions from the Standard User profile remain as is
+Create a new permission set:
+Label: Rating
+API Name: Rating
+User License: Salesforce
+Control access for the Rating permission set:
+Field Permissions:
+Rating field on the Account object: Read Access, Edit Access
+```
+
 ### Control Access to Records:
 ### Create a Role Hierarchy:
 ### Define sharing rules: 
