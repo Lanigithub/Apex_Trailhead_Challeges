@@ -406,6 +406,24 @@ Rating field on the Account object: Read Access, Edit Access
 ```
 
 ### Control Access to Records:
+#### You control record-level access in four ways. They’re listed in order of increasing access. You use org-wide defaults to lock down your data to the most restrictive level, and then use the other record-level security tools to grant access to selected users, as required.
+```
+Org-wide defaults specify the default level of access users have to each other’s records.
+Role hierarchies ensure managers have access to the same records as their subordinates. Each role in the hierarchy represents a level of data access that a user or group of users needs.
+Sharing rules are automatic exceptions to org-wide defaults for particular groups of users, to give them access to records they don’t own or can’t normally see.
+Manual sharing lets record owners give read and edit permissions to users who might not have access to the record any other way.
+```
+### Project: Challenge Requirements
+```
+Create a custom object:
+Label: Project
+Plural Label: Projects
+Object Name: Project
+Record Name: Project Name
+Record Name Data Type: Text
+Configure organization-wide default sharing settings for the Project object so that Project records are visible only to the record owner and to users above them in the role hierarchy.
+```
+
 ### Create a Role Hierarchy:
 ### Define sharing rules: 
 
