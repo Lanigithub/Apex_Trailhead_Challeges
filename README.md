@@ -361,6 +361,7 @@ Records
   * ######  The new user must be inactive
 
 ### Control Access to the Objects:
+https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_objects
  #### You can set object permissions with profiles or permission sets. Each user is assigned one profile. Users can be assigned one or more permission sets.
     * #### A user’s profile determines the objects they can access and the things they can do with any object record (such as create, read, edit, or delete).
    * #### Permission sets grant additional permissions and access settings to a user.
