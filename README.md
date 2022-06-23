@@ -361,6 +361,22 @@ Records
   * ######  The new user must be inactive
 
 ### Control Access to the Objects:
+ #### You can set object permissions with profiles or permission sets. Each user is assigned one profile. Users can be assigned one or more permission sets.
+    * #### A user’s profile determines the objects they can access and the things they can do with any object record (such as create, read, edit, or delete).
+   * #### Permission sets grant additional permissions and access settings to a user.
+### Project: Create a Cleaner profile
+#### through a data cleanup project, and you assigned a consultant to help you. You want the consultant to have read-only access to most objects, but have edit rights only on accounts, contacts, and leads. You don't want the consultant to delete anything or create new records.
+#### Challenge Requirements
+```
+Clone the Minimum Access - Salesforce profile with the following settings:
+Use existing profile: Minimum Access - Salesforce
+Profile Name: Cleaner
+Control access for the Cleaner profile:
+Object Permissions: Accounts (Read, Edit)
+Object Permissions: Contacts (Read, Edit)
+Object Permissions: Leads (Read, Edit)
+Make sure Edit and Create object permissions aren't enabled for any other objects in the Cleaner profile.
+```
 ### Control Access to the Fields:
 ### Control Access to Records:
 ### Create a Role Hierarchy:
